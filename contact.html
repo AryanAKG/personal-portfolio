@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">My intro</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/contact.html" id="active">Contact Me</a></li>
+                    <li><a href="https://www.linkedin.com/in/aryan-deep-saxena-283500227/" target="_blank" ><img src="ins.png" alt="linkedin" class="icon"></a></li>
+                    <li><a href="https://www.instagram.com/aryan_d_saxena/" target="_blank" ><img src="li.jpg" alt="instagram" class="icon"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mainContact">
+            <div class="hamburger">
+                <img class="ham" src="hamburger.png" alt="hamburger"width="23">
+                <img class="cross" src="cross.png" alt="cross"width="23">
+            </div>
+            <h2>Contact Form</h2>
+            <div class="formm">
+                <form id="form" class="form">
+                    <div class="formControl">
+                    <label for="name">Name : </label>
+                    <input id="name" type="text" size="20" placeholder="enter your full name" required><br><br><br>
+                    </div>
+                    <div class="formControl">
+                    <label for="email">Email : </label>
+                    <input id="email" type="email" placeholder="enter your email-id" required><br><br><br>
+                    </div>
+                    <div class="formControl">
+                    <label for="phone">Contact Number : </label>
+                    <input id="phone" type="number" placeholder="enter your contact no." required><br><br><br>
+                    </div>
+                    <div class="formControl success">
+                    <label for="reason">Reason : </label>
+                    <input id="reason" type="text" placeholder="your reason to contact" required><br><br>
+                    </div>
+                    <div class="formControl success">
+                    <label for="gender">Gender :</label>
+                    <select id="gender" name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select><br><br>
+                    </div>
+                    <div class="formControl success">
+                    <label for="address">Address : </label>
+                    <input id="address" type="text" placeholder="enter your address"><br><br>
+                    <input type="checkbox" id="v1" name="v1">
+                    <label for="v1"> I am a Student</label><br>
+                    <input type="checkbox" id="v2" name="v2">
+                    <label for="v2"> I am a Working Professional</label><br>
+                    <input type="checkbox" id="v3" name="v3">
+                    <label for="v3"> I am a Client</label><br><br>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
